@@ -1,0 +1,22 @@
+{
+  "name": "imhere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kh4n998/imhere.git"
+  },
+  "author": "ka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kh4n998/imhere/issues"
+  },
+  "homepage": "https://github.com/kh4n998/imhere#readme",
+  "dependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

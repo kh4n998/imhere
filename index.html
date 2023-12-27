@@ -7,35 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yellowtail&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                fontFamily: {
-                    'brand': ['"Yellowtail"', 'cursive'],
-                    'mono': ['"Space Mono"', 'monospace'],
-                    'code': ['"Source Code Pro"', 'monospace']
-                },
-                extend: {
-                    colors: {
-                        "primary": "#00cf00",
-                        "body": "#263238",
-                        "neon": "#8ce436"
-                    }
-                }
-            }
-        }
-    </script>
-    <style type="text/tailwindcss">
-        @layer components {
-            .flex-middle {
-                @apply flex items-center justify-center
-            }
-            .text-shadow-neon {
-                text-shadow: 0 0 5px theme("colors.neon"), 0 0 10px theme("colors.neon"), 0 0 20px theme("colors.neon"), 0 0 40px theme("colors.neon"), 0 0 80px theme("colors.neon")
-            }
-        }
-    </style>
+    <link href="dist/tail.css" rel="stylesheet">
 </head>
 <body class="bg-slate-900 text-white font-mono">
     <header class="absolute top-0 left-0 right-0 z-[1000] p-[1.25rem_1.25rem_0] lg:p-[2.5rem_2rem_0]">

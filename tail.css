@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .flex-middle {
+        @apply flex items-center justify-center
+    }
+    .text-shadow-neon {
+        text-shadow: 0 0 5px theme("colors.neon"), 0 0 10px theme("colors.neon"), 0 0 20px theme("colors.neon"), 0 0 40px theme("colors.neon"), 0 0 80px theme("colors.neon")
+    }
+}
