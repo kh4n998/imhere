@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head class=" snap-proximity snap-y scroll-smooth">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I'm here</title>
@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yellowtail&display=swap" rel="stylesheet">
     <link href="dist/tail.css" rel="stylesheet">
+    <script defer src="index.js"></script>
+    
 </head>
-<body class="bg-slate-900 text-white font-mono snap-y snap-mandatory scroll-smooth">
+<body class="bg-slate-900 text-white font-mono">
     <header class="absolute top-0 left-0 right-0 z-[1000] p-[1.25rem_1.25rem_0] lg:p-[2.5rem_2rem_0]">
         <nav class="flex items-center container mx-auto">
             <a href="#" class="ml-auto mr-auto lg:ml-0 font-bold text-5xl font-brand text-white text-shadow-neon">Kh4n9</a>
@@ -32,38 +34,37 @@
             </div>
         </nav>
     </header>
-    <section id="home" class="h-[100dvh] pt-28 snap-center px-4">
-        <div class="container mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4 items-center">
-                <div class="order-1 lg:order-1 px-4 lg:px-0">
-                    <h1 class="hidden lg:block font-code mb-6">&lt;h1&gt; Hello world! &lt;&#47;h1&gt;</h1>
-                    <div class=" text-4xl lg:text-5xl mb-4">
-                        I'm <br><b>Bui Dinh Khang</b>
-                    </div>
-                    <h5 class="mb-4 text-3xl">A Front-end developer</h5>
-                    <div class="lg:w-3/4 mb-5">
-                        Call me <span class="text-neon">#Ka</span>, a programmer who designs web interfaces, starting from the love of drawing but not knowing how to use a pencil.
-                    </div>
-                    <button class="px-8 py-4 font-bold transition rounded-3xl text-white border-neon border-2 hover:bg-neon hover:text-body hover:shadow-[0_0_3px_theme('colors.neon'),_0_0_10px_theme('colors.neon'),_0_0_50px_theme('colors.neon')]">Let's talk</button>
+    <section id="home" class="container mx-auto h-screen pt-28 mb-1">
+        <div class="h-full grid grid-cols-1 lg:grid-cols-2 gap-x-4 items-center">
+            <div class="order-1 lg:order-1 px-4 lg:px-0">
+                <h1 class="hidden lg:block font-code mb-6">&lt;h1&gt; Hello world! &lt;&#47;h1&gt;</h1>
+                <div class=" text-4xl lg:text-5xl mb-4">
+                    I'm <br><b>Bui Dinh Khang</b>
                 </div>
-                <div class="relative order-2 px-4 lg:px-0">
-                    <img src="images/developer2.png" alt="hero_img" class="w-full drop-shadow-[0px_0px_80px_#8ce436]">
+                <h5 class="mb-4 text-2xl lg:text-3xl">A Front-end developer</h5>
+                <div class="lg:w-3/4 mb-5 lg:text-lg">
+                    Call me <span class="text-neon">#Ka</span>, a programmer who designs web interfaces, starting from the love of drawing but not knowing how to use a pencil.
                 </div>
+                <button class="px-8 py-4 font-bold transition rounded-3xl text-body lg:text-white border-neon border-2 bg-neon lg:bg-transparent lg:hover:bg-neon lg:hover:text-body lg:hover:shadow-[0_0_3px_theme('colors.neon'),_0_0_10px_theme('colors.neon'),_0_0_50px_theme('colors.neon')]">Let's talk</button>
+            </div>
+            <div class="relative order-2 px-4 lg:px-0">
+                <img src="images/developer2.png" alt="hero_img" class="w-full drop-shadow-[0px_0px_80px_#8ce436]">
             </div>
         </div>
     </section>
-    <section id="about" class="h-[100dvh] pt-20 snap-center px-4">
+    <section data-section id="about" class="pt-20 px-4 invisible blur-sm -translate-x-full transition-all duration-1000 opacity-0">
         <div class="container mx-auto">
+            <h2 class="text-2xl lg:text-6xl mb-4">Who am I?</h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-48 mb-5 lg:mb-20">
                 <div class="flex flex-col lg:flex-col-reverse gap-8">
                     <div class="border-white border-2 shadow-[3px_3px_30px_#fff] overflow-hidden rounded-3xl">
-                        <img src="images/about/hoankiemlake.jpg" alt="hoankiemlake">
+                        <img loading="lazy" src="images/about/hoankiemlake.jpg" alt="hoankiemlake">
                     </div>
                     <h4 class="mb-6">I come from a countryside in Hanoi. <br>Where Trưng sisters led the Lac Viet people to rise up in rebellion against the Han.</h4>
                 </div>
                 <div class="flex flex-col gap-8">
                     <div class="border-white border-2 shadow-[3px_3px_30px_#fff] overflow-hidden rounded-3xl">
-                        <img src="images/about/twin.png" alt="twin">
+                        <img loading="lazy" src="images/about/twin.png" alt="twin">
                     </div>
                     <h4 class="mb-6">I have a older brother, people say we look like each other. <br> And like every brothers, I always want to punch his face every 5 minutes when we are together &#129323;.</h4>
                 </div>
@@ -71,20 +72,119 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-48">
                 <div class="flex flex-col lg:flex-col-reverse gap-8">
                     <div class="">
-                        <img src="images/about/dog2.png" alt="dog">
+                        <img loading="lazy" src="images/about/dog2.png" alt="dog">
                     </div>
                     <h4 class="mb-6">I love dog, all of it. <br>The dog is very loyal and also very smart.</h4>
                 </div>
                 <div class="flex flex-col gap-8">
                     <div class="">
-                        <img src="images/about/twin.png" alt="twin">
+                        <img loading="lazy" src="images/about/twin.png" alt="twin">
                     </div>
                     <h4 class="mb-6">I have a older brother, people say we look like each other. <br> And like every brothers, I always want to punch his face every 5 minutes when we are together &#129323;.</h4>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <section id="tech" class="h-[100dvh] pt-20 snap-center px-4">
+    <section data-section id="about" class="pt-20 px-4 invisible blur-sm -translate-x-full transition-all duration-1000 opacity-0">
+        <h2>Who am I?</h2>
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-48 mb-5 lg:mb-20">
+                <div class="flex flex-col lg:flex-col-reverse gap-8">
+                    <div class="border-white border-2 shadow-[3px_3px_30px_#fff] overflow-hidden rounded-3xl">
+                        <img loading="lazy" src="images/about/hoankiemlake.jpg" alt="hoankiemlake">
+                    </div>
+                    <h4 class="mb-6">I come from a countryside in Hanoi. <br>Where Trưng sisters led the Lac Viet people to rise up in rebellion against the Han.</h4>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <div class="border-white border-2 shadow-[3px_3px_30px_#fff] overflow-hidden rounded-3xl">
+                        <img loading="lazy" src="images/about/twin.png" alt="twin">
+                    </div>
+                    <h4 class="mb-6">I have a older brother, people say we look like each other. <br> And like every brothers, I always want to punch his face every 5 minutes when we are together &#129323;.</h4>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-48">
+                <div class="flex flex-col lg:flex-col-reverse gap-8">
+                    <div class="">
+                        <img loading="lazy" src="images/about/dog2.png" alt="dog">
+                    </div>
+                    <h4 class="mb-6">I love dog, all of it. <br>The dog is very loyal and also very smart.</h4>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <div class="">
+                        <img loading="lazy" src="images/about/twin.png" alt="twin">
+                    </div>
+                    <h4 class="mb-6">I have a older brother, people say we look like each other. <br> And like every brothers, I always want to punch his face every 5 minutes when we are together &#129323;.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-section id="about" class="pt-20 px-4 invisible blur-sm -translate-x-full transition-all duration-1000 opacity-0">
+        <h2>Who am I?</h2>
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-48 mb-5 lg:mb-20">
+                <div class="flex flex-col lg:flex-col-reverse gap-8">
+                    <div class="border-white border-2 shadow-[3px_3px_30px_#fff] overflow-hidden rounded-3xl">
+                        <img loading="lazy" src="images/about/hoankiemlake.jpg" alt="hoankiemlake">
+                    </div>
+                    <h4 class="mb-6">I come from a countryside in Hanoi. <br>Where Trưng sisters led the Lac Viet people to rise up in rebellion against the Han.</h4>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <div class="border-white border-2 shadow-[3px_3px_30px_#fff] overflow-hidden rounded-3xl">
+                        <img loading="lazy" src="images/about/twin.png" alt="twin">
+                    </div>
+                    <h4 class="mb-6">I have a older brother, people say we look like each other. <br> And like every brothers, I always want to punch his face every 5 minutes when we are together &#129323;.</h4>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-48">
+                <div class="flex flex-col lg:flex-col-reverse gap-8">
+                    <div class="">
+                        <img loading="lazy" src="images/about/dog2.png" alt="dog">
+                    </div>
+                    <h4 class="mb-6">I love dog, all of it. <br>The dog is very loyal and also very smart.</h4>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <div class="">
+                        <img loading="lazy" src="images/about/twin.png" alt="twin">
+                    </div>
+                    <h4 class="mb-6">I have a older brother, people say we look like each other. <br> And like every brothers, I always want to punch his face every 5 minutes when we are together &#129323;.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-section id="about" class="pt-20 px-4 invisible blur-sm -translate-x-full transition-all duration-1000 opacity-0">
+        <h2>Who am I?</h2>
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-48 mb-5 lg:mb-20">
+                <div class="flex flex-col lg:flex-col-reverse gap-8">
+                    <div class="border-white border-2 shadow-[3px_3px_30px_#fff] overflow-hidden rounded-3xl">
+                        <img loading="lazy" src="images/about/hoankiemlake.jpg" alt="hoankiemlake">
+                    </div>
+                    <h4 class="mb-6">I come from a countryside in Hanoi. <br>Where Trưng sisters led the Lac Viet people to rise up in rebellion against the Han.</h4>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <div class="border-white border-2 shadow-[3px_3px_30px_#fff] overflow-hidden rounded-3xl">
+                        <img loading="lazy" src="images/about/twin.png" alt="twin">
+                    </div>
+                    <h4 class="mb-6">I have a older brother, people say we look like each other. <br> And like every brothers, I always want to punch his face every 5 minutes when we are together &#129323;.</h4>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-48">
+                <div class="flex flex-col lg:flex-col-reverse gap-8">
+                    <div class="">
+                        <img loading="lazy" src="images/about/dog2.png" alt="dog">
+                    </div>
+                    <h4 class="mb-6">I love dog, all of it. <br>The dog is very loyal and also very smart.</h4>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <div class="">
+                        <img loading="lazy" src="images/about/twin.png" alt="twin">
+                    </div>
+                    <h4 class="mb-6">I have a older brother, people say we look like each other. <br> And like every brothers, I always want to punch his face every 5 minutes when we are together &#129323;.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="tech" class="h-[100dvh] pt-20 px-4 invisible">
         <div class="container mx-auto">
             <div class="flex-middle space-x-10">
                 <img src="images/logo/angular.png" alt="angular" width="250">
@@ -97,15 +197,5 @@
             </div>
         </div>
     </section> -->
-    <section id="about" class="h-[100dvh] pt-20 snap-center px-4">
-        <div class="container mx-auto">
-
-        </div>
-    </section>
-    <section id="about" class="h-[100dvh] pt-20 snap-center px-4">
-        <div class="container mx-auto">
-
-        </div>
-    </section>
 </body>
 </html>
