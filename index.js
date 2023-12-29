@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.forEach((entry) => {
             
             if (entry.isIntersecting) {
-                if (entry.target.id === "info_hero") {
+                if (entry.target.id === "header_bar") {
+                    entry.target.classList.add("translate-y-0");
+                    entry.target.classList.remove("-translate-y-full");
+                } else if (entry.target.id === "info_hero") {
                     entry.target.classList.add("visible", "opacity-1", "blur-none", "translate-x-0");
                     entry.target.classList.remove("invisible", "opacity-0", "blur-sm", "-translate-x-full");
                 } else if (entry.target.id === "img_hero") {
@@ -26,7 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     document.querySelectorAll("section[data-section]").forEach(section => observer.observe(section))
     
-    //gen hero section
+    //get header bar
+    const headerBar = document.querySelector("#header_bar");
+    observer.observe(headerBar)
+    //get hero section
     const homeSection = document.querySelector("#home");
     const imgHero = homeSection.querySelector("#img_hero");
     const infoHero = homeSection.querySelector("#info_hero");
