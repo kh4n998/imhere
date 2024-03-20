@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'brand': ['"Yellowtail"', 'cursive'],
+      'brand': ['"Montserrat"', 'sans-serif'],
       'mono': ['"Space Mono"', 'monospace'],
       'code': ['"Source Code Pro"', 'monospace']
     },
